@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+    text-transform: uppercase;
+}
+
+.heading p{
+    margin: 25px 0;
+}
+
+.para{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+/* NAV STARTS */
+nav{
+    background-color: #02918c;
+}
+
+nav li{
+    display: inline-block;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu{
+    width: 70%;
+    text-align: right;
+}
+
+.menu a{
+    padding: 25px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    color: white
+}
+
+/* NAV ENDS */
+
+/* BANNER STARS */
+#banner{
+    background-image: url(../Images/banner.jpg);
+    height: 729px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner .row{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 729px;
+    text-align: center;
+}
+
+.banner_cnt h2{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.banner_cnt h1{
+    color: white;
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.banner_cnt p{
+    color:white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.banner_cnt img{
+    margin: 52px 0;
+}
+
+.banner_cnt a{
+    color: black;
+    padding: 19px 43px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: #cfc91d;
+    font-weight: 800;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+/* BANNER ENDS */
+
+/* ABOUT ME SECTION STARTS */
+#about{
+    padding: 100px 0;
+}
+
+.about_para{
+    color: #afb2b4;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 80px ;
+}
+
+.about_para span{
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.about_crd{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #d9dbdb;
+    padding: 36px 0; 
+}
+
+.about_crd span{
+    font-size: 40px;
+    color: #02918c;
+    text-align: center;
+}
+
+.about_crd h3{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.about_crd p{
+    color: #7e8287;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.about_crd:last-child{
+    border:none;
+}
+
+/* ABOUT ME SECTION ENDS */
+
+/* SERVICE SECTION STARTS */
+#service{
+    background-image: url(../Images/service.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 72px;
+}
+
+.service_cnt{
+    width: 50%;
+}
+
+.service_cnt .heading{
+    text-align: left;
+}
+
+.service_para{
+    line-height: 40px;
+    color: #7e8287;
+    font-size: 16px;
+    margin-bottom: 61px;
+}
+
+.service_card{
+    width: 50%;
+    padding-bottom: 50px ;
+}
+
+.service_card span{
+    font-size: 40px;
+    color: #02918c;
+    
+}
+
+.service_card h3{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.service_card p{
+    color: #7e8287;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+
+/* SERVICE SECTION ENDS */
+
+/* WORK SECTION STARTS */
+#work{
+    margin: 100px 0;
+}
+
+
+.work_crd{
+    width: 25%;
+    position: relative;  
+}
+
+.work_crd img{
+    width: 100%;
+    display: block;
+    
+}
+
+.overlay{
+    background-color: #148781bd;
+    background-blend-mode: multiply;
+    inset: 21px 28px;
+    padding-top: 55px ;
+    position: absolute;
+    text-align: center;
+    line-height: 24px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    transition: 0.5s;
+
+}
+
+.overlay h3{
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+.overlay p{
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.work_crd:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+/* WORK SECTION ENDS */
+
+/* CONTACT SECTION STRATS */
+.para{
+    margin-bottom: 74px;
+}
+
+.form_div{
+    background-color: #0b0b0b;
+    padding: 65px 0;
+}
+
+.form_input{
+    margin: auto;
+    width: 600px;
+}
+
+.bigger_input{
+    width: 800px;
+}
+
+.form_input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin-bottom: 65px;
+    padding: 10px 0;
+    color: white;
+}
+
+.form_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form a{
+    color: black;
+    padding: 19px 43px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: #cfc91d;
+    font-weight: 800;
+    font-size: 14px;
+    display: inline-block;
+}
+/* CONTACT SECTION ENDS */
+
+/* FOOTER SECTION STARTS */
+footer{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 35px 0;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+/* FOOTER SECTION ENDS */
